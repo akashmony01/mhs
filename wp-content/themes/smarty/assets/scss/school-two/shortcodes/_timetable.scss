@@ -1,0 +1,65 @@
+.tt_tabs_navigation li {
+	margin: 0 !important;
+	font-size: 18px !important;
+
+	a {
+		border: 2px solid transparent !important;
+		padding: 0 30px !important;
+		line-height: 46px !important;
+		color: $dark !important;
+
+		&:hover {
+			color: $orange !important;
+			border: 2px solid transparent !important;
+			padding-bottom: 0 !important;
+		}
+	}
+
+	a.selected,
+	&.ui-tabs-active a {
+		border: 2px solid $swampy !important;
+		padding-bottom: 0 !important;
+
+		&:hover {
+			color: $dark-blue !important;
+		}
+	}
+}
+
+.tt_timetable th {
+	background: $white;
+	color: #aaa;
+}
+
+.tt_tabs_navigation {
+	margin-bottom: 40px;
+}
+
+.tt_navigation_cell {
+	display: block;
+	width: 100%;
+	max-width: none;
+	margin: 0 0 30px !important;
+	.ui-tabs-nav {
+		display: flex;
+		width: 100% !important;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		li {
+			margin: 0 !important;
+		}
+		&:after {
+			display: none;
+		}
+	}
+}
+
+table.tt_timetable {
+	border-collapse: collapse !important;
+	td {
+		border: 1px solid #ddd !important;
+		.event_container {
+			padding: 15px 20px !important;
+		}
+	}
+}

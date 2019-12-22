@@ -1,0 +1,148 @@
+.stm-carousel_type_testimonials {
+	.stm-testimonial {
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		@include transition(opacity);
+		transform: translateZ(0);
+	}
+
+	&.owl-loaded {
+		.stm-testimonial {
+			position: relative;
+			opacity: 1;
+		}
+	}
+
+	.owl-controls {
+		padding-top: 14px;
+
+		.owl-dots {
+			text-align: center;
+		}
+	}
+
+	.owl-controls .owl-dot {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 5px;
+		span {
+			display: block;
+			width: 10px;
+			height: 10px;
+			background: rgba($dark, 0.2) ;
+			&:hover {
+				background: $swampy;
+			}
+		}
+
+		&.active span {
+			display: block;
+			padding: 0;
+			background: $swampy;
+			transform: scale(1);
+		}
+	}
+}
+
+.stm-testimonial__avatar {
+	width: 98px !important;
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto !important;
+		width: auto !important;
+		border-radius: 50%;
+	}
+}
+
+// Style 1
+.stm-testimonial_style_1 {
+	.stm-testimonial__avatar {
+		display: table-cell;
+		width: 1%;
+		vertical-align: top;
+		padding-top: 0;
+	}
+
+	.stm-testimonial__content {
+		display: table-cell;
+		padding-top: 24px;
+		padding-right: 50px;
+		padding-left: 28px;
+		vertical-align: top;
+	}
+
+	.stm-testimonial__text {
+		margin-bottom: 20px;
+
+		p {
+			margin-bottom: 16px;
+			font: {
+				size: 16px;
+			}
+			line-height: 26px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.stm-testimonial__author {
+		font-family: $second-font-family;
+		font-weight: 700;
+		font-size: 24px;
+	}
+
+	&.stm-testimonial_color_dark-blue {
+		.stm-testimonial__text p,
+		.stm-testimonial__text {
+			color: $dark-blue;
+		}
+
+		.stm-testimonial__author b,
+		.stm-testimonial__author strong,
+		.stm-testimonial__author {
+			color: $dark-gray;
+		}
+	}
+
+	@media( max-width: 991px ) {
+		.stm-testimonial__avatar {
+			display: block;
+		}
+		.stm-testimonial__content {
+			display: block;
+			padding: 30px 15px 0;
+		}
+	}
+	@media( max-width: 640px ) {
+		.stm-testimonial__avatar {
+			width: 100% !important;
+			text-align: center;
+		}
+	}
+}
+
+.stm-blockquote__content {
+	display: table;
+}
+
+.stm-blockquote__avatar {
+	display: table-cell;
+}
+
+.stm-blockquote__body {
+	display: table-cell;
+	width: 10000px;
+	vertical-align: middle;
+}
+
+.stm-blockquote_avatar_left {
+	.stm-blockquote__body {
+		padding-left: 65px;
+	}
+}
+

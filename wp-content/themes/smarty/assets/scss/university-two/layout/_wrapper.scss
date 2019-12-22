@@ -1,0 +1,30 @@
+#wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.custom_bg {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 1110px;
+    margin-left: -555px;
+    background-color: $blue;
+  }
+  @media ( max-width: 1110px ) {
+    background-color: $blue !important;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+#st_gdpr_iframe {
+  border: 0;
+}

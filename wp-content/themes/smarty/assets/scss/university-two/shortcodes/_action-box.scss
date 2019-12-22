@@ -1,0 +1,125 @@
+.stm-action-box {
+    max-width: 350px;
+    margin: 0 auto;
+
+    .stm-action-box__figure {
+        .stm-action-image-box {
+            position: relative;
+            margin-bottom: 13px;
+            @include transition();
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .stm-action-box__figcaption_content {
+        @include transition();
+    }
+}
+
+.stm-action-box__figcaption-title {
+	position: relative;
+	padding: 10px 0 6px;
+	font-size: 24px;
+	line-height: 30px;
+    font-weight: 700;
+	@include transition();
+}
+
+.stm-action-box__title-text {
+	position: relative;
+    color: $dark;
+	z-index: 2;
+}
+
+.stm-text-box__content {
+    position: relative;
+    padding: 0;
+    max-height: 52px;
+    margin-bottom: 26px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.stm-text-box__content p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.stm-text-box__link_title {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 0 30px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.stm-action-box__figure {
+	&:hover {
+		.stm-action-box__figcaption-title {
+			color: $white;
+
+			&:after {
+				height: 100%;
+			}
+
+			&.stm-font_color_dark-blue {
+				color: $white !important;
+			}
+		}
+	}
+}
+
+.stm-action-box__figcaption-link {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+.stm-action-box__figure.stm-action-box__figure_small {
+  .stm-action-box__figcaption_content {
+    margin-top: -40px;
+
+    .stm-action-box__figcaption-title {
+      padding: 5px 20px 7px;
+      font-size: 14px;
+    }
+
+    .stm-text-box__content {
+      padding: 0 20px;
+    }
+
+    .stm-text-box__link_title {
+      padding: 0 20px;
+      font-size: 13px;
+    }
+
+    .stm-text-box__content p {
+      font-size: 13px;
+      line-height: 26px;
+      color: $white;
+    }
+  }
+
+  &:hover .stm-action-box__figcaption_content {
+    padding-top: 58px;
+    padding-bottom: 30px;
+  }
+}
+
+.stm-action-box {
+    &:hover {
+        .stm-action-image-box {
+            box-shadow: 7px 7px 0 $blue;
+        }
+        .stm-action-box__title-text {
+            color: $blue;
+        }
+    }
+}

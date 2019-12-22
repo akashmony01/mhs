@@ -1,0 +1,45 @@
+.stm-stats_counter {
+	&.stm-stats_icon_left {
+		.stm-stats__icon {
+			float: left;
+			font-size: 67px;
+			color: $green;
+		}
+
+		.stm-stats__content {
+			overflow: hidden;
+		}
+
+        .stm-stats__content.center {
+          overflow: visible;
+          padding-left: 0;
+        }
+	}
+
+	.stm-stats__value {
+		margin-bottom: 15px;
+		color: $white;
+		font: {
+			size: 36px;
+			weight: 700;
+		}
+	}
+
+	.stats__value-number {
+		line-height: 1;
+	}
+
+    .stm-stats__title {
+      margin-bottom: 12px;
+    }
+
+	.stm-stats__descr {
+		line-height: 20px;
+        font-weight: 400;
+		color: rgba($white, 0.5);
+	}
+}
+
+.stm-stats__icon svg path {
+	stroke: inherit !important;
+}

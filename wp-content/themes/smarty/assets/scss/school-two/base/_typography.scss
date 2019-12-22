@@ -1,0 +1,177 @@
+* {
+	&:focus {
+		outline: none !important;
+	}
+}
+
+html {
+	min-height: 100%;
+	height: 100%;
+}
+
+body {
+	background: $white;
+	font: {
+		family: $primary-font-family;
+		size: $primary-font-size;
+	}
+	line-height: 26px;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+
+h1,
+.h1 {
+	margin: 0 0 33px 0;
+	font: {
+		size: 60px;
+		weight: 700;
+		family: $second-font-family;
+	}
+	color: $dark;
+}
+
+h2,
+.h2 {
+	margin: 0 0 20px 0;
+	font: {
+		size: 36px;
+		weight: 700;
+		family: $second-font-family;
+	}
+	color: $dark;
+}
+
+h3,
+.h3 {
+	margin: 0 0 20px 0;
+	font: {
+		size: 24px;
+		weight: 700;
+		family: $second-font-family;
+	}
+	color: $dark;
+}
+
+h4,
+.h4 {
+	margin: 0 0 20px 0;
+	font: {
+		size: 18px;
+		weight: 700;
+		family: $second-font-family;
+	}
+	color: $dark;
+}
+
+h5,
+.h5 {
+	margin: 0 0 20px 0;
+	font: {
+		size: 16px;
+		weight: 700;
+		family: $second-font-family;
+	}
+	color: $dark;
+}
+
+h6,
+.h6 {
+	margin: 0 0 20px 0;
+	font: {
+		size: 15px;
+		weight: 700;
+		family: $second-font-family;
+	}
+	color: $dark;
+}
+
+p {
+	margin-bottom: 26px;
+	line-height: 26px;
+	color: $dark;
+
+	&:last-child { margin-bottom: 0; }
+}
+
+a {
+	color: $orange;
+
+	&:hover,
+	&:focus {
+		color: $orange;
+	}
+}
+
+dl {
+	margin: 0 20px;
+	dd {
+		margin-bottom: 20px;
+	}
+}
+
+pre {
+	border-radius: 0;
+	border: none;
+	background: #eee;
+	padding: 25px;
+	margin-bottom: 30px;
+}
+
+blockquote {
+	padding: 20px 50px 20px;
+	border-left: 4px solid $swampy;
+	font-size: 16px;
+
+	cite {
+		display: block;
+		margin-top: 31px;
+		font: {
+			style: normal;
+			size: 15px;
+		}
+	}
+}
+
+.box_shadow {
+	.vc_column-inner {
+		> .wpb_wrapper {
+			padding: 30px 40px;
+			border-radius: 5px;
+			background-color: $white;
+			box-shadow: 0 10px 20px rgba($black, 0.1);
+			.vc_icon_element-size-lg {
+				width: auto;
+				height: auto;
+				text-align: left;
+				font-size: 17px;
+				border: 0;
+				.vc_icon_element-icon {
+					position: relative;
+					top: auto;
+					left: auto;
+					right: auto;
+					bottom: auto;
+					display: inline;
+					border: 0;
+				}
+			}
+			.icon_link {
+				font-size: 14px;
+				color: $dark;
+				&:after {
+					content: "\e929";
+					font-family: 'stm-icon' !important;
+					display: inline-block;
+					vertical-align: middle;
+					margin: -1px 0 0 8px;
+					font-size: 9px;
+					font-weight: 400;
+					-webkit-transform: rotate(45deg);
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
+}
